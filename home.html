@@ -1,0 +1,183 @@
+<html>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-M98MFRB');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131583482-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-131583482-2');
+    </script>  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NBA Draft Focus</title>
+    <meta name="Description" content="NBA Draft Focus specializes in providing predictions and player profiles for the 2018 NBA Draft to the public..">
+    <meta name="KeyWords" content="NBA, NBA draft, NBA draft focus, NBA reports, NBA prospects">
+    <meta name="author" content="Parker McClelland">
+    <link rel="stylesheet" type="text/css" href="/css/default.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(window).on("scroll", function() {
+          if($(window).scrollTop()) {
+              $('nav').addClass('gray');
+          }
+          else {
+              $('nav').removeClass('gray');
+          }
+      })
+    </script>
+  </head>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="nba%20draft.png">
+      </div>
+      <ul id="menu">
+        <li><a href="home.html" class="active-page">Home</a></li>
+        <li><a href="predictions.html">Predictions</a></li>
+        <li><a href="prospects.html" >Prospects</a></li>
+        <li><a href="about.html" >About</a></li>
+      </ul>
+      <div id="toggle">
+        <div class="span" id="one"></div>
+        <div class="span" id="two"></div>
+        <div class="span" id="three"></div>
+      </div>
+    </nav>
+    <div id="resize">
+      <ul id="menu">
+        <li><a href="home.html" >Home</a></li>
+        <li><a href="predictions.html" class="active-page">Predictions</a></li>
+        <li><a href="prospects.html">Prospects</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+  <body>
+      <div id="slide">
+        <div class="slideshow-container">
+          <div class="mySlides fade"> <img src="mpj.jpg">
+          </div>
+          <div class="mySlides fade"> <img src="bagley.jpg">
+          </div>
+          <div class="mySlides fade"> <img src="ayton.jpg">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+        </div>
+        <br>
+        <div style="text-align:center"> 
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <div class="aboutcontext2">
+        <h1>NBA Draft Focus</h1>
+        <br>
+        <p>NBA Draft Focus specializes in providing predictions and player profiles for the 2018 NBA Draft to the public.</p>
+        <br>
+        <p>Check out the lastest NBA mock lottery draft.</p>
+        <br>
+        <ul>
+          <li>1. Phoenix Suns - Deondre Ayton</li>
+          <li>2. Memphis Grizzlies - Marvin Bagley</li>
+          <li>3. Dallas Mavericks- Michael Porter</li>
+          <li>4. Atlanta Hawks - Collin Sexton</li>
+          <li>5. Orlando Magic- Jaren Jackson Jr.</li>
+          <li>6. Chicago Bulls - Luka Doncic</li>
+          <li>7. Sacramento Kings - Wendell Carter</li>
+          <li>8. Cleveland Cavaliers - Trae Young</li>
+          <li>9. New York Knicks- Kevin Knox</li>
+          <li>10. Philadephia 76ers - Mikal Bridges</li>
+          <li>11. Charlotte Hornets - Mohamed Bamba</li>
+          <li>12. Los Angeles Clippers - Robert Williams</li>
+          <li>13. Los Angeles Clippers - Lonnie Walker</li>
+          <li>14. Denver Nuggets - Mitchell Robinson</li>
+        </ul>
+        <br>
+        <p>Explore the site at your leisure.</p>
+      </div>
+      <footer>
+        <span><a href="home.html">Home</a></span>
+        <br>
+        <span><a href="predictions.html">Predictions</a></span>
+        <br>
+        <span><a href="prospects.html">Prospects</a></span>
+        <br>
+        <span><a href="about.html">About</a></span>
+      </footer>
+  </div>
+  </body>
+  <script>
+    $("#toggle").click(function() {
+    
+    $(this).toggleClass('on');
+    $("#resize").toggleClass("active");
+    
+    });
+
+    var slideIndex = 0;
+    showSlides();
+    var slides,dots;
+    
+    function plusSlides(position) {
+        slideIndex += position;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        else if(slideIndex < 1){slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" slideactive", "");
+    
+          }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " slideactive";
+        }
+    
+    function currentSlide(index) {
+        if (index > slides.length) {index = 1}
+        else if(index < 1){index = slides.length}
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" slideactive", "");
+          }
+            slides[index-1].style.display = "block";  
+            dots[index-1].className += " slideactive";
+        }
+    
+    function showSlides() {
+        var i;
+        slides = document.getElementsByClassName("mySlides");
+        dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" slideactive", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " slideactive";
+        setTimeout(showSlides, 15000); // Change image every 15 seconds
+    }
+    
+  </script>
+</html>
